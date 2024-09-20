@@ -133,8 +133,8 @@ body {
   font-size: 18px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 
 .hero-button:hover {
@@ -753,18 +753,19 @@ body {
   z-index: 10;
 }
 .swiper-button-next {
-  right: 10px; /* Стрелка вправо с отступом от правого края */
+  right: 10px;
 }
 
 .swiper-button-prev {
-  left: 10px; /* Стрелка влево с отступом от левого края */
+  left: 10px;
+  position: static;
 }
 .partners {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-top: 110px;
-  margin-bottom: 1000px;
+  margin-bottom: 500px;
 }
 .partners h1 {
   font-size: 48px;
@@ -801,4 +802,238 @@ body {
   height: auto;
   object-fit: contain;
   transition: transform 1s ease-out;
+}
+
+.footer {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1400px;
+  margin-top: 40px;
+  padding: 0px 40px;
+  margin-bottom: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  width: 30%;
+}
+.footer-left {
+  margin-right: 132px;
+}
+.footer-logo {
+  width: 160px;
+  margin-bottom: 36px;
+}
+
+.adresses {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.city {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+.adress-contain {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  gap: 8px;
+}
+.adress-contain p {
+  margin-bottom: 4px;
+  font-size: 15px;
+}
+.map {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  gap: 8.67px;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 4px;
+}
+.map::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #666;
+  width: 43%;
+}
+.footer-time {
+  margin-bottom: 38px;
+}
+.footer-social-icons {
+  display: flex;
+  gap: 38px;
+  margin-bottom: 25px;
+}
+
+.buttons-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.footer-button,
+.footer-accessibility-button {
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 315px;
+  height: 44px;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.footer-button {
+  background-color: #fff;
+  color: #000;
+}
+.footer-accessibility-button {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.accessibility-button {
+  display: flex;
+  align-items: center;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: #fff;
+  margin: 0 auto;
+}
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  width: 203px;
+}
+
+.footer-column-large .footer-item {
+  font-size: 15px;
+}
+
+.footer-column-small .footer-item {
+  font-size: 12px;
+}
+
+.footer-item {
+  margin-bottom: 21px;
+}
+
+.footer-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-item a:hover {
+  color: #00aaff;
+  text-decoration: underline;
+}
+
+.footer-phone {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.footer-text {
+  color: #abb5b4;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.footer-text-bootom {
+  color: #abb5b4;
+  margin-top: 105px;
+  width: 425px;
+  font-size: 12px;
+}
+.footer-bottom {
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.politics {
+  display: flex;
+  gap: 239px;
+}
+.footer-links a {
+  color: #abb5b4;
+  text-decoration: none;
+  font-size: 12px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #00aaff;
+}
+
+.footer-info {
+  font-size: 12px;
+  color: #aaa;
+  border-top: 1px solid #444;
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-company {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+}
+
+.footer-company a {
+  color: #abb5b4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-company a:hover {
+  color: #00aaff;
 }
