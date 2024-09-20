@@ -598,21 +598,25 @@ body {
 }
 
 .swiper-container {
-  width: 100%;
   height: auto;
   padding: 20px 0;
+  max-width: 1400px;
+  overflow: hidden;
+  position: relative;
 }
 .swiper-wrapper {
   display: flex;
   width: 100%;
   gap: 10px;
+  justify-content: center;
 }
 .card-doctor {
   background-color: #fff;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 315px;
+  width: 100%;
+  max-width: 300px;
   text-align: center;
   position: relative;
   margin-bottom: 20px;
@@ -711,8 +715,13 @@ body {
   color: #000;
 }
 .swiper-slide {
+  width: 100%; /* Слайд займет всю ширину контейнера */
+  max-width: 315px;
   display: flex;
   justify-content: center;
+  width: auto;
+  margin: 0;
+  padding: 0;
 }
 
 .view-all-btn {
@@ -721,6 +730,75 @@ body {
   background-color: #009688;
   color: #fff;
   border: none;
-  border-radius: 20px;
+  border-radius: 8px;
   cursor: pointer;
+  width: 227px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 44px;
+  height: 44px;
+  background-color: #e5e8e7;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.swiper-button-next {
+  right: 10px; /* Стрелка вправо с отступом от правого края */
+}
+
+.swiper-button-prev {
+  left: 10px; /* Стрелка влево с отступом от левого края */
+}
+.partners {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 110px;
+  margin-bottom: 1000px;
+}
+.partners h1 {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.partners p {
+  font-size: 18px;
+}
+.partners-container {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.partners-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  will-change: transform;
+}
+.row-content {
+  display: flex;
+  gap: 20px;
+}
+.partners-row img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  transition: transform 1s ease-out;
 }

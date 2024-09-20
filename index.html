@@ -7,7 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
 <div class="wrapper">
@@ -526,47 +528,56 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-     
-                <div class="card-doctor">
-                  <div class="img-contain">
-                    <img src="images/doctor3.png" alt="Анастасия Романова">
-                  </div>
-                    <span class="recommendation-new">80% рекомендаций</span>
-                    <div class="specialization-box">Гастроэнтеролог</div>
-                    <div class="experience-box"><span>Стаж</span> 8 лет</div>
-                   <div class="doctor-info-wrapper">
-                        <p class="doctor-name-new">Анастасия Романова</p>
-                        <p class="doctor-status">Врач высшей категории</p>
-                    </div>
-                    <p class="price-new">Записаться от <strong>1100Р</strong></p>
-                </div>
+            <!-- Навигационные кнопки -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+               <div class="swiper-slide">
                 <div class="card-doctor">
                     <div class="img-contain">
-                      <img src="images/doctor2.png" alt="Анастасия Романова">
+                      <img src="images/doctor3.png" alt="Анастасия Романова">
                     </div>
-                      <span class="recommendation-new">94% рекомендаций</span>
-                      <div class="specialization-box">Кардиолог</div>
-                      <div class="experience-box"><span>Стаж</span> 12 лет</div>
+                      <span class="recommendation-new">80% рекомендаций</span>
+                      <div class="specialization-box">Гастроэнтеролог</div>
+                      <div class="experience-box"><span>Стаж</span> 8 лет</div>
                      <div class="doctor-info-wrapper">
-                          <p class="doctor-name-new">Руслан Глушаков</p>
-                          <p class="doctor-status">Кандидат медицинских наук</p>
-                      </div>
-                      <p class="price-new">Записаться от <strong>2000Р</strong></p>
-                  </div>
-                  <div class="card-doctor">
-                    <div class="img-contain">
-                      <img src="images/doctor5.png" alt="Анастасия Романова">
-                    </div>
-                      <span class="recommendation-new">92% рекомендаций</span>
-                      <div class="specialization-box">Косметолог</div>
-                      <div class="experience-box"><span>Стаж</span> 7 лет</div>
-                     <div class="doctor-info-wrapper">
-                          <p class="doctor-name-new">Алина Кириллова</p>
+                          <p class="doctor-name-new">Анастасия Романова</p>
                           <p class="doctor-status">Врач высшей категории</p>
                       </div>
-                      <p class="price-new">Записаться от <strong>1700Р</strong></p>
+                      <p class="price-new">Записаться от <strong>1100Р</strong></p>
                   </div>
-                  <div class="card-doctor">
+               </div>
+                <div class="swiper-slide">
+                    <div class="card-doctor">
+                        <div class="img-contain">
+                          <img src="images/doctor2.png" alt="Анастасия Романова">
+                        </div>
+                          <span class="recommendation-new">94% рекомендаций</span>
+                          <div class="specialization-box">Кардиолог</div>
+                          <div class="experience-box"><span>Стаж</span> 12 лет</div>
+                         <div class="doctor-info-wrapper">
+                              <p class="doctor-name-new">Руслан Глушаков</p>
+                              <p class="doctor-status">Кандидат медицинских наук</p>
+                          </div>
+                          <p class="price-new">Записаться от <strong>2000Р</strong></p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card-doctor">
+                        <div class="img-contain">
+                          <img src="images/doctor5.png" alt="Анастасия Романова">
+                        </div>
+                          <span class="recommendation-new">92% рекомендаций</span>
+                          <div class="specialization-box">Косметолог</div>
+                          <div class="experience-box"><span>Стаж</span> 7 лет</div>
+                         <div class="doctor-info-wrapper">
+                              <p class="doctor-name-new">Алина Кириллова</p>
+                              <p class="doctor-status">Врач высшей категории</p>
+                          </div>
+                          <p class="price-new">Записаться от <strong>1700Р</strong></p>
+                      </div>
+                </div>
+               <div class="swiper-slide">
+                <div class="card-doctor">
                     <div class="img-contain">
                       <img src="images/doctor4.png" alt="Мария Пожарская">
                     </div>
@@ -579,15 +590,97 @@
                       </div>
                       <p class="price-new">Записаться от <strong>2800Р</strong></p>
                   </div>
-            <!-- Навигационные кнопки -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+               </div>
+                <div class="swiper-slide">
+                    <div class="card-doctor">
+                        <div class="img-contain">
+                          <img src="images/doctor6.png" alt="Илья Андреев">
+                        </div>
+                          <span class="recommendation-new">80% рекомендаций</span>
+                          <div class="specialization-box">Гинеколог</div>
+                          <div class="experience-box"><span>Стаж</span> 7 лет</div>
+                         <div class="doctor-info-wrapper">
+                              <p class="doctor-name-new">Илья Андреев</p>
+                              <p class="doctor-status">Врач высшей категории</p>
+                          </div>
+                          <p class="price-new">Записаться от <strong>2800Р</strong></p>
+                    </div>
+                </div>
+               <div class="swiper-slide">
+                <div class="card-doctor">
+                    <div class="img-contain">
+                      <img src="images/doctor1.png" alt="Ирина Васильва">
+                    </div>
+                      <span class="recommendation-new">80% рекомендаций</span>
+                      <div class="specialization-box">Гинеколог</div>
+                      <div class="experience-box"><span>Стаж</span> 7 лет</div>
+                     <div class="doctor-info-wrapper">
+                          <p class="doctor-name-new">Ирина Васильва</p>
+                          <p class="doctor-status">Врач высшей категории</p>
+                      </div>
+                      <p class="price-new">Записаться от <strong>2800Р</strong></p>
+                  </div>
+               </div>
+        
         </div>
     
         <button class="view-all-btn">Смотреть всех врачей</button>
     </section>
+    <section class="partners">
+        <h1>Наши партнёры</h1>
+        <p>Профессионалы своего дела</p>
+        <div class="partners-container">
+          <div class="partners-row" id="partners-row1">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+          </div>
+          <div class="partners-row" id="partners-row2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+                <img src="images/logo2.png" alt="Partner 2">
+                <img src="images/logo1.png" alt="Partner 1">
+          </div>
+        </div>
+      </section>
 </div>
-<script src="scripts.js"></script>
+
 
 </body>
+<script src="scripts.js"></script>
 </html>
